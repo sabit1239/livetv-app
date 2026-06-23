@@ -1,0 +1,40 @@
+{
+  "name": "OTTStream - Live TV",
+  "short_name": "OTTStream",
+  "description": "Watch live TV channels from around the world",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ef4444",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Sports",
+      "short_name": "Sports",
+      "url": "/search?category=sports",
+      "description": "Watch live sports channels"
+    },
+    {
+      "name": "News",
+      "short_name": "News",
+      "url": "/search?category=news",
+      "description": "Watch live news channels"
+    }
+  ],
+  "categories": ["entertainment", "sports", "news"],
+  "screenshots": []
+}
