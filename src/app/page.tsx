@@ -126,7 +126,7 @@ export default function HomePage() {
               <Heart className="w-5 h-5 text-red-500 fill-red-500" />
               <h2 className="text-white text-xl font-bold">My Favorites</h2>
             </div>
-            <ChannelRow channels={favoriteChannels} onPlay={handlePlay} />
+            <ChannelRow title="My Favorites" channels={favoriteChannels} onPlay={handlePlay} />
           </div>
         )}
 
