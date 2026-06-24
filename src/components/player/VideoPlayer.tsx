@@ -103,7 +103,7 @@ export default function VideoPlayer({ channel, autoPlay = true, className, onErr
       setIsBuffering(false);
     });
 
-    hls.on(Hls.Events.BUFFER_STALLED, () => {
+    hls.on(Hls.Events.ERROR, () => {
       setIsBuffering(true);
     });
 
