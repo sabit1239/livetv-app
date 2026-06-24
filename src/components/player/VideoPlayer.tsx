@@ -107,8 +107,6 @@ export default function VideoPlayer({ channel, autoPlay = true, className, onErr
       setIsBuffering(true);
     });
 
-    hls.on(Hls.Events.STATS, (_, data) => {
-      setStats({ bandwidth: Math.round((data as any).bandwidth / 1000), dropped: 0 });
     });
 
     hls.on(Hls.Events.ERROR, (_, data) => {
